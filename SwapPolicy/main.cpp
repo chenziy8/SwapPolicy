@@ -1,6 +1,6 @@
 #include "swap-policy.hpp"
 #include <iostream>
-
+//FIFO, Random policy and LRU Policy
 int main(int argc, char const* argv[])
 {
 	int iterations = 1000;
