@@ -12,7 +12,6 @@ bool FirstInFirstOutPolicy::AccessPage(int page_number)
     access_counts++;
     if (cache.find(page_number) != cache.end())
         return true;
-
     else
     {
         cache_misses++;
@@ -24,7 +23,6 @@ bool FirstInFirstOutPolicy::AccessPage(int page_number)
         }
         cacheQueue.push(page_number);
         cache.insert(page_number);
-
         return false;
     }
 }
